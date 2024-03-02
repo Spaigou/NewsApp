@@ -1,7 +1,7 @@
 plugins {
     id("java-library")
     alias(libs.plugins.jetbrainsKotlinJvm)
-    alias(libs.plugins.kotlinSerialization) apply false
+    alias(libs.plugins.kotlinSerialization)
 }
 
 java {
@@ -13,4 +13,5 @@ dependencies {
     implementation(libs.retrofit)
     implementation(libs.kotlinx.coroutines.core)
     implementation(libs.kotlinx.serialization.json)
+    implementation(libs.androidx.annotation)
 }
